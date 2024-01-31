@@ -216,7 +216,7 @@ a:hover::before {
 /* start button-contact********* */
 .title-section button{
   margin-left: 60px;
-  margin-top: 235px;
+  margin-top: 220px;
   font-family: "Montserrat", Sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -227,6 +227,7 @@ a:hover::before {
     border-color: #f0f0f0;
     border-radius:26px 26px 26px 26px;
     padding: 10px 20px 10px 20px;
+    cursor: pointer;
 }
 @media(max-width:372px){
   .title-section button{
@@ -234,8 +235,35 @@ a:hover::before {
     margin-top: 255px;
   }
 }
-
 /* end button-contact********* */
-
-
 /* ----------------------------------------end title-section */
+/* ----------------------------------------start tape-section */
+.tape-section{ 
+  width: 100%;
+  height:90px ;
+  background-color: rgb(228, 203, 14);
+  overflow: hidden;
+}
+.tape-section h1 br{
+  display: none;
+}
+.tape-section h1{
+  color: #0C2D57;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px 
+}
+@media(max-width:440px){
+  .tape-section h1 br{
+    display: block;
+  }
+  .tape-section h1{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10px 
+  }
+}
+/* ----------------------------------------end tape-section */
