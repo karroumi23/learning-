@@ -14,7 +14,7 @@
 nav {
   width: 100%;
   background-color: blue;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   display: flex;
   align-items: center;
 }
@@ -26,7 +26,7 @@ nav {
   justify-content: space-between;
 }
 .navbar img {
-  width: 40px;
+  width: 35px;
   cursor: pointer;
   border: white 2px solid;
   border-radius: 20%;
@@ -137,12 +137,6 @@ a:hover::before {
   margin-right: 15px;
 }
 
-
-
-/* .dropdown:hover .dropdown-content {
-  display: block;
-} */
-
 /* -------------------------------------------end-navbar */
 /* ----------------------------------------start title-section */
 
@@ -197,7 +191,6 @@ a:hover::before {
   .title-section .title h3{
     display: none;
   }
-
 }
 
 .title-section h2 {
@@ -216,7 +209,7 @@ a:hover::before {
 }
 @media(max-width:1065px){
   .title-section h2 {
-    margin-top: -5px;
+    margin-top: -10px;
     font-size: 35px;
     font-weight: bold;
     line-height: 1em;
@@ -322,7 +315,74 @@ a:hover::before {
   border-radius: 50px;
 }
 /* ----------------------------------------end tape-section */
-/* --------------------------------------start cards--------------------- */
+
+/*  ------------------------------------start social media */
+.box-social{
+  position: fixed;
+  width: 34px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 8px 0 rgb(0, 0,0,.4);
+ }
+ @media(max-width:372px){
+  .box-social{
+    margin-top: -75px;
+  }
+ }
+ .box-social li{
+  position: relative;
+  height: 37px;
+ }
+ .box-social li a{
+  color: white;
+  display: block;
+  width: 85%;
+  height: 100%;
+  line-height: 39px;
+  padding-left: 15%;
+  border-bottom: 1px solid rgb(0, 0,0,.4) ;
+  text-decoration: none;
+  transition: all .2s linear;
+ }
+ .box-social li:nth-child(1) a{
+    background: #4267B2;
+ }
+ .box-social li:nth-child(2) a{
+    background: #FF0000;
+ }
+ .box-social li:nth-child(3) a{
+    background: #E1306C;
+ }
+ .box-social li:nth-child(4) a{
+    background: #2867B2;
+ }
+
+ .box-social li a I{
+   position: absolute;
+   top: 10px;
+   left: 5px;
+   font-size: 20px;
+ }
+ .box-social li a span{
+   font-weight: bold;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   display: none;
+ }
+ .box-social li a:hover{
+  z-index: 3;
+  width: 200px;
+  border-bottom: 1px solid rgb(0, 0,0,.5) ;
+  box-shadow: 0 0 1px 1px rgb(0, 0,0,.3);
+ }
+ .box-social li a:hover span{
+  display: block;
+  margin-left: 50px;
+}
+
+
+/*  ------------------------------------end social media */
+
+/* --------------------------------------start cards------------------ */
 
 .section{
   width: 100%;
@@ -365,7 +425,7 @@ a:hover::before {
   cursor: pointer;
   transition: 0.2s;
   overflow: hidden;
-  box-shadow: 3px 3px 4.5px #7c52f1;
+  box-shadow: 3px 3px 4.5px #ab98de;
 }
 @media (min-width:889px){
 .section .cards-section .card:hover{
