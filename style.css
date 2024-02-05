@@ -13,10 +13,13 @@
 /* -------------------------------------------start-navbar */
 nav {
   width: 100%;
+  height: 50px;
   background-color: rgb(10, 10, 158);
-  /* opacity: 0.7; */
   display: flex;
   align-items: center;
+  /* opacity: 0.8; */
+  position: fixed;
+  z-index: 10;
 }
 .navbar {
   width: 80%;
@@ -26,7 +29,7 @@ nav {
   justify-content: space-between;
 }
 .navbar img {
-  width: 35px;
+  width: 28px;
   cursor: pointer;
   border: white 2px solid;
   border-radius: 20%;
@@ -36,11 +39,12 @@ nav {
   display: none;
   display: flex;
   list-style: none;
-  margin: 15px 0px 20px auto;
+  margin: 15px 0px 15px auto;
 }
 @media (max-width: 1000px) {
   .navbar ul {
     display: none;
+    margin: 10px 0px 10px auto;
   }
 }
 .navbar li {
@@ -82,7 +86,7 @@ a:hover::before {
 /* ----------dropdown */
 
 .dropbtn {
-  background-color: blue;
+  background-color: rgb(10, 10, 158);
   color: #f9f9f9;
   font-size: 16px;
   border: none;
@@ -216,7 +220,7 @@ a:hover::before {
 /* start button-contact********* */
 .title-section button {
   margin-left: 60px;
-  margin-top: 220px;
+  margin-top: 274px;
   font-family: "Montserrat", Sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -320,6 +324,7 @@ a:hover::before {
   width: 34px;
   margin-top: 5px;
   box-shadow: 2px 2px 8px 0 rgb(0, 0, 0, 0.4);
+  z-index: 11;
 }
 @media (max-width: 372px) {
   .box-social {
@@ -515,25 +520,25 @@ a:hover::before {
 .section-rotaion {
   width: 100%;
   padding-top: 85px;
-  /* background-color: #f3580b; */
+  padding-bottom: 20px;
   background-color: #e9e7e6;
   display: flex;
 }
 .zone-paragraph {
   width: 50%;
   height: 300px;
-  margin-left: 80px;
-  margin-bottom: 85px;
+  margin-left: 60px;
+  margin-bottom: 55px;
   background-color: #fff;
   text-align: center;
   align-items: center;
   border-radius: 20px;
   box-shadow: 2px 2px 8px #c4bcdd;
-  padding-bottom: 55px;
+  padding-bottom: 20px;
   padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .zone-paragraph span {
@@ -545,25 +550,127 @@ a:hover::before {
 
 .zone-paragraph p {
   color: black;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: serif;
+  font-size: 19.5px;
+  margin-top: 20px;
+}
+
+@media (min-width: 950px) and (max-width: 1115px) {
+  .section-rotaion .zone-paragraph p {
+    color: rgb(17, 16, 16);
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 20px;
+  }
+  .zone-paragraph {
+    width: 55%;
+    height: auto;
+    margin-left: 80px;
+    margin-bottom: 85px;
+    padding: 40px 30px 40px 30px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 949px) {
+  .section-rotaion {
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+  }
+  .zone-paragraph {
+    width: 70%;
+    height: auto;
+    margin-left: 10%;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #c4bcdd;
+  }
+  .zone-paragraph span {
+    font-size: 29px;
+  }
+  .section-rotaion .zone-paragraph p {
+    color: black;
+    font-size: 15px;
+    font-family: serif;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 450px) {
+  .zone-paragraph {
+    margin-left: 8%;
+  }
 }
 
 .container {
   /* background-color: #e1306c; */
   width: 30%;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgb(30, 30, 200, 0.3);
-  margin: 50px;
+  margin: 40px 50px 50px 50px;
 }
+
 .wrapper {
   width: 100%;
   height: 100%;
   display: flex;
   animation: slide 16s infinite;
 }
+.container img {
+  width: 100%;
+}
+/* telephone************ */
+@media (max-width: 450px) {
+  .zone-paragraph {
+    width: 60%;
+    height: auto;
+    margin-left: 18%;
+    padding-bottom: 40px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+  }
+  .zone-paragraph span {
+    color: rgb(183, 162, 5);
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .container {
+    display: none;
+  }
+}
+/* telephone************ */
+
+@media (max-width: 949px) {
+  .container {
+    width: 45%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .zone-paragraph {
+    padding-bottom: 30px;
+  }
+  .container {
+    width: 60%;
+    height: 240px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+  }
+  .container img {
+    width: 100%;
+  }
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
